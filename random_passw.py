@@ -12,10 +12,6 @@ class Password(object):
         password = self.lower+self.upper+self.digits+self.symbols
         return "".join(random.choices(password, k=self.length))
 
-def main():
-    print("Enter True/False to the questions")
-    lower = bool(input("Lower case?"))
-
-bruh = [True, True, True, True, 8]
-p1 = Password(*bruh)
+options = [True, True, True, True, 8]
+p1 = Password(*options)
 print(p1.create())
