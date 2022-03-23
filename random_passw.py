@@ -1,4 +1,3 @@
-from ast import arg
 import random, string, os
 os.system("cls")
 class Password(object):
